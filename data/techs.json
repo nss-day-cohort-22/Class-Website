@@ -6,14 +6,14 @@
       "link": "https://www.javascript.com/"
     },
     {
-      "name": "AngularJS",
-      "image": "images/techs/angularjs.png",
-      "link": "https://angularjs.org/"
+      "name": "HTML5",
+      "image": "images/techs/html5.png",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
     },
     {
-      "name": "jQuery",
-      "image": "images/techs/jquery.png",
-      "link": "https://jquery.com/"
+      "name": "CSS3",
+      "image": "images/techs/css3.png",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
     },
     {
       "name": "Git",
@@ -31,21 +31,6 @@
       "link": "https://gruntjs.com/"
     },
     {
-      "name": "HTML5",
-      "image": "images/techs/html5.png",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-    },
-    {
-      "name": "CSS3",
-      "image": "images/techs/css3.png",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
-    },
-    {
-      "name": "Sass",
-      "image": "images/techs/sass.png",
-      "link": "https://sass-lang.com/"
-    },
-    {
       "name": "Bootstrap",
       "image": "images/techs/bootstrap.png",
       "link": "https://getbootstrap.com/"
@@ -56,34 +41,19 @@
       "link": "http://browserify.org/"
     },
     {
-      "name": "Firebase",
-      "image": "images/techs/firebase.png",
-      "link": "https://firebase.google.com"
-    },
-    {
-      "name": "Materialize",
-      "image": "images/techs/materialize.png",
-      "link": "http://materializecss.com/"
-    },
-    {
       "name": "NPM",
       "image": "images/techs/npm.png",
       "link": "https://www.npmjs.com/"
     },
     {
-      "name": "SQLite3",
-      "image": "images/techs/sqlite.png",
-      "link": "https://www.sqlite.org/"
-    },
-    {
-      "name": "SQL Server",
-      "image": "images/techs/sqlserver.png",
-      "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2017"
-    },
-    {
       "name": "Visual Studio Code",
       "image": "images/techs/vsc.png",
       "link": "https://code.visualstudio.com/"
+    },
+    {
+      "name": "Visual Studio",
+      "image": "images/techs/visual_studio.png",
+      "link": "https://www.visualstudio.com/vs/"
     },
     {
       "name": "C#",
@@ -96,24 +66,9 @@
       "link": "https://www.microsoft.com/net/"
     },
     {
-      "name": "Visual Studio",
-      "image": "images/techs/VisualStudio.png",
-      "link": "https://www.visualstudio.com/vs/"
-    },
-    {
       "name": ".Net MVC",
       "image": "images/techs/aspnetMVC.png",
       "link": "https://www.asp.net/mvc"
-    },
-    {
-      "name": "ES lint",
-      "image": "images/techs/eslint.png",
-      "link": "https://eslint.org/"
-    },
-    {
-      "name": "UglifyJs",
-      "image": "images/techs/uglify.png",
-      "link": "https://www.npmjs.com/package/uglifyjs"
     }
   ]
 }

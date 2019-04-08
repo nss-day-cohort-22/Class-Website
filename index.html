@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Cohort [number] - Nashville Software School</title>
+    <title>Cohort 29 - Nashville Software School</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
-    <!-- Navigation and Header Bar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="100">
 
-            <a class="navbar-brand" href="#">
-                <img src="images/nsslogo.png" class="d-inline-block align-top logo" alt="Cohort 22 Logo">
-            </a>
-            <a href="#">
-                <h2 id="cohort22">Cohort [number] | Demo Day [DATE]</h2>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-            </a>
+        <a href="#" class="navbar-brand">
+            <img src="images/nsslogo.png" class="d-inline-block align-top logo" alt="Nashville Software School">
+        </a>
+        <div class="title">
+            <h1 class="d-block mb-0">Cohort 29</h1>
+            <div class="demoday">Demo Day: May 17</div>
+        </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active nav-spacing title-font">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item nav-spacing title-font">
-                        <a class="nav-link" href="#thedevelopers">Developers</a>
-                    </li>
-                    <li class="nav-item nav-spacing title-font">
-                        <a class="nav-link" href="#techsection">Technologies</a>
-                    </li>
-                    <li class="nav-item nav-spacing title-font">
-                        <a class="nav-link" href="#thankyou">Thanks</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-spacing title-font">
+                    <a class="nav-link" href="#thedevelopers">Developers</a>
+                </li>
+                <li class="nav-item nav-spacing title-font">
+                    <a class="nav-link" href="#techsection">Technologies</a>
+                </li>
+                <li class="nav-item nav-spacing title-font">
+                    <a class="nav-link" href="#thankyou">Thanks</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Group photos -->
     <div class="jumbotron jumbotron-fluid">
@@ -76,50 +69,55 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        
-        <a id="thedevelopers"></a>
-        <nav id="jumbheader" class="navbar navbar-light bg-light">
+
+        <a id="thedevelopers" class="offset"></a>
+        <div id="jumbheader">
             <span class="header-text">
-                <h2 class="title-font">The Developers</h2>
+                <!-- <h2 class="title-font">The Developers</h2> -->
+                <div class="subtitle">
+                    <a href="cohort29_demo_day.ics"><i class="far fa-calendar-alt"></i> &nbsp;Come see us demo on May 17!</a>
+                </div>
             </span>
-        </nav>
+        </div>
     </div>
-    
+
     <main>
         <!-- developer section -->
-        <div class="container">
-                <h3 id="demo-date">Come see us demo on [DATE]!</h3>
+        <div id="developers">
+                <!-- <h3 id="demo-date">Come see us demo on May 17!</h3> -->
             <div id="cohort" class="row">
                 <!-- content inserted from the cohort.json file -->
             </div>
         </div>
 
         <!-- technology section -->
-        <a id="techsection"></a>
-        <div class="jumbotron jumbotron-fluid sm-width">
-            <nav id="jumbheader" class="navbar navbar-light bg-light">
+        <a id="techsection" class="offset"></a>
+        <!-- <div class="jumbotron jumbotron-fluid sm-width">
+            <div id="jumbheader">
                 <span class="header-text">
                     <h2 class="title-font">Technologies</h2>
                 </span>
-            </nav>
-        </div>
-        <div class="container technos">
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="section-title"><h2 class="title-font">Technologies</h2></div>
             <div id="techs" class="row">
                 <!-- content inserted from the techs.json file -->
             </div>
         </div>
 
         <!-- thanks section -->
-        <a id="thankyou"></a>
-        <div class="jumbotron jumbotron-fluid sm-width">
-            <nav id="jumbheader" class="navbar navbar-light bg-light">
+        <a id="thankyou" class="offset"></a>
+        <!-- <div class="jumbotron jumbotron-fluid sm-width">
+            <div id="jumbheader">
                 <span class="header-text">
                     <h2 class="title-font styleHeaders">Thank You!</h2>
                 </span>
-            </nav>
-        </div>
-        <div class="container words">
-            <div id="thanks">
+            </div>
+        </div> -->
+        <div class="container">
+            <div class="section-title"><h2 class="title-font">Thank You!</h2></div>
+            <div id="thanks" class="row">
                 <p>
                     Thank you seems like such a small word when compared to the school and instructors who have become
                     our heroes. When we began this journey, we didn't quite know what to expect but now that we have
@@ -151,11 +149,9 @@
     </main>
 
     <!-- footer -->
-    <footer class="navbar navbar-light bg-light footer">
-        <p>
-            &copy; 2018. Nashville Software School Cohort [number].
-        </p>
-    </footer>
+    <div class="footer">
+        &copy; 2019 Nashville Software School Cohort 29
+    </div>
 
 
     <!-- scripts -->

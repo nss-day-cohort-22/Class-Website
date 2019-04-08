@@ -1,54 +1,100 @@
-p {
-  font-family: 'Barlow', sans-serif;
-}
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background: url("../images/background.jpg") fixed no-repeat;
     background-size: 100%;
-    background-color: black;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
 }
 
-blockquote{
+blockquote {
     margin-left: 40px;
     margin-right: 40px;
     background-color: #ddd;
     padding: 2em;
 }
 
-.navbar{
-    background-color: rgb(55, 55, 56);
-    padding: 20px;
+.navbar-dark {
+    background-color:#101010;
+    border-bottom: 2px solid #ff8400;
+    box-shadow: 0px 0px 14px #101010;
+    color: #fff;
+    padding: 15px;
 }
-.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top{
-    background: white !important;
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
-.navbar-brand{
+
+.navbar-brand {
     display: flex;
+    margin: 0;
 }
+
 .nav-spacing {
   margin-right: 2em;
 }
 
-#cohort22{
-    display: inline-block;
-    color: #238193;
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
 }
 
-#jumbheader{
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff8400;
+}
+
+.title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.title .demoday {
+    font-size: 11px;
+    letter-spacing: 6px;
+    padding-left: 3px;
+    text-transform: uppercase;
+}
+
+/* #jumbheader{
     box-shadow: 2px 2px 2px rgb(167, 166, 166);
-    background-color: #238193!important;
-    color: lightgray;
+    background-color: #101010!important;
+    padding: 15px 0px;
+} */
 
+.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 900px;
 }
+
+.container .row {
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.container #thanks {
+    font-size: 20px;
+    padding: 20px 30px;
+}
+
+.section-title {
+    background-color: #101010;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+}
+
+.section-title h2 {
+    color: #fff;
+    margin-bottom: 0px;
+}
+
 .header-text{
     margin: 0 auto;
-    padding-top: 10px;
-    font-weight: bold;
-    height: 50px;
+    padding: 10px 0px;
     color: white;
-
 }
 
 .title-font {
@@ -56,10 +102,33 @@ blockquote{
     vertical-align: middle;
 }
 
-.logo{
-    height: 50px;
+h2.title-font {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
 }
 
+.subtitle {
+    box-shadow: 2px 2px 2px rgb(167, 166, 166);
+    background-color: #101010!important;
+    padding: 15px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.subtitle a {
+    color: #fff;
+}
+
+.subtitle a:hover {
+    color: #ff8400;
+    text-decoration: none;
+}
+
+.logo {
+    height: 65px;
+}
 
 .jumbotron.jumbotron-fluid{
     background: none;
@@ -78,46 +147,79 @@ main {
     overflow-x: hidden;
   }
 
-.row{
-    justify-content: center;
+.row {
+    justify-content: space-evenly;
 }
 
 .navbar-collapse{
     justify-content: flex-end;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.col-md-3.cohortMems{
-    border: 1px solid lightgray;
-    border-radius:10px;
-    box-shadow: 2px 2px 2px lightgray;
-    margin: 10px;
-    margin-bottom: 25px;
-    background: white;
-}
-
-.col-sm-2.technologies{
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-}
-
-.technos, .words{
-    margin-top: -55px;
-    background: white;
-    padding:20px;
-    border-radius: 20px;
-}
-
-.techs{
-    width: 70px;
-    margin: 20px 0px;
+.offset {
+    position: relative;
+    top: -100px;
+    display: block;
   }
 
-.words{
-    padding:50px;
+
+#developers {
+    margin: 0 auto;
+    max-width: 1000px;
 }
+
+.cohortMems {
+    margin: 10px 0px 40px 0px;
+}
+
+.profile-picture  {
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 300px;
+    box-shadow: 1px 0px 14px 1px #ccc;
+}
+
+.profile-picture img {
+    border-radius: 15px;
+}
+
+.student-name {
+    font-size: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.studentContact {
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.contactIcons {
+    color: #ff8200;
+    font-size: 36px;
+}
+.contactIcons:hover {
+    color: #000;
+}
+
+.modal-body .studentContact {
+    margin: 0px;
+    width: 210px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.techs {
+    width: 70px;
+    margin: 20px;
+  }
 
 .no-gutters {
     margin-right: 0;
@@ -136,50 +238,34 @@ main {
   }
 
 .modal-body{
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .studentContact{
-      text-align: center;
-      display: flex;
-      justify-content: space-evenly;
-      -webkit-justify-content: space-evenly;
-      margin-bottom: .75rem;
-  }
 
-  .contactIcons{
-      color: #238193;
-  }
-  .contactIcons:hover{
-      transform: scale(1.2);
-  }
-
-  .modal-header{
-    background-color: lightgray!important;
-    color: #238193;
-  }
-
-  .modal-body img{
-    width: 50%;
-    height: 50%;
+/* .modal-body img{
+    width: 200px;
+    height: auto;
     box-shadow: 3px 3px 5px #cacaca;
     border-radius: 10px;
-  }
+} */
 
-  .backButton{
-      margin-bottom: 1.5rem;
-  }
-
-.navbar.navbar-light.bg-light.footer{
-    margin-top:10px;
-    font-size: 1em;
-    background-color: #238193!important;
-    color: white;
+.modal-body img {
+    width: 300px;
+    max-width: 100%;
 }
 
-#demo-date {
+.backButton{
+    margin-bottom: 1.5rem;
+}
+
+.footer{
+    margin-top:10px;
+    font-size: 1em;
+    background-color: #101010!important;
+    color: white;
+    padding: 20px 0px;
     text-align: center;
-    color: #238193!important;
 }
 
 button{
@@ -187,33 +273,45 @@ button{
 }
 .btn-outline-primary{
     color: #238193!important;
-    border-color: #238193!important;
+    border-color: #ff8200!important;
 }
 
 .btn-outline-primary:hover{
     color: white!important;
-    background-color: #238193!important;
+    background-color: #ff8200!important;
 }
 
-/* adjusts size of contact icons depending on size of card */
-@media (min-width: 992px) and (max-width: 1200px){
-    .fa-3x{
-        font-size: 2.5em!important;
-      }
-}
 
-@media (min-width: 768px) and (max-width: 991px){
-    .fa-3x{
-        font-size: 2em!important;
-      }    
+@media (min-width: 768px) {
+    .title {
+        padding-left: 20px;
+    }
+    .subtitle {
+        font-size: 28px;
+    }
+    .profile-picture  {
+        width: 200px;
+    }
+    .student-name {
+        font-size: 24px;
+    }
+    .studentContact {
+        width: 150px;
+    }
+    .contactIcons{
+        font-size: 20px;
+    }
+    .modal-body .studentContact .contactIcons {
+        font-size: 30px;
+    }
+    .container #thanks {
+        font-size: 14px;
+    }
 }
 
 
 @media (max-width: 900px) {
 
-    /* body {
-        background: url("../assets/images/bg.jpg") repeat;
-    } */
     .jumbotron.jumbotron-fluid img{
         background: white;
         margin-top:30px;
@@ -223,11 +321,9 @@ button{
     }
        .header-text{
         margin: 0 auto;
-        height: 30px;
        }
        .header-text h2{
         font-size: 1.5em;
-        margin-top: -10px;
        }
        .modal-body{
         display: block;
@@ -248,3 +344,50 @@ button{
       }
 
 }
+
+.profile-picture {
+    position: relative;
+  }
+  .ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+  }
+  .ribbon span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#F70505 0%, #8F0808 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+  }
+  .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #8F0808;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+  }
+  .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F0808;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+  }

@@ -16,27 +16,27 @@ function cohortMembers(list) {
     let studentContact = `<div class="studentContact">`
     //if student doesn't have a portfolio site then don't display the icon
     if (item.portfolio != null) {
-      studentContact += `<a href=${item.portfolio} target="_blank">
+      studentContact += `<div class="icon"><a href=${item.portfolio} target="_blank">
       <i class="fas fa-globe fa-2x contactIcons"></i>
-      </a>`
+      </a></div>`
     }
     //if student doesn't have a github site then don't display the icon
     if (item.github != null) {
-      studentContact += `<a href=${item.github} target="_blank">
+      studentContact += `<div class="icon"><a href=${item.github} target="_blank">
       <i class="fab fa-github fa-2x contactIcons"></i>
-      </a>`
+      </a></div>`
     }
     //if student doesn't have a linkedin site then don't display the icon
     if (item.linkedIn != null) {
-      studentContact += `<a href=${item.linkedIn} target="_blank">
+      studentContact += `<div class="icon"><a href=${item.linkedIn} target="_blank">
       <i class="fab fa-linkedin fa-2x contactIcons"></i>
-      </a>`
+      </a></div>`
     }
     //if student doesn't have an email then don't display the icon
     if (item.email != null) {
-      studentContact += `<a href=mailto:${item.email}>
+      studentContact += `<div class="icon"><a href=mailto:${item.email}>
               <i class="fas fa-envelope fa-2x contactIcons"></i>
-            </a>`
+            </a></div>`
     }
     studentContact += `</div>`
 
@@ -49,7 +49,7 @@ function cohortMembers(list) {
       }
     }
 
-    let studentInfo = `<div class="col-xl-3 col-lg-4 col-sm-6 cohortMems d-flex flex-column ">
+    let studentInfo = `<div class="col-xl-3 col-lg-4 col-sm-6 cohortMems d-flex flex-column">
       <div class="mb-4 h-100 d-flex flex-column">
           <div class="profile-picture">
             ${getHired(item.hired)}
@@ -64,22 +64,12 @@ function cohortMembers(list) {
     //if a student doesn't have a bio, then the learn more button doesn't appear and a modal isn't created
     if (item.bio != null) {
 
-      // studentInfo += `
-      //       <center><button type="button" class="btn btn-sm btn-outline-primary title-font bottom" data-toggle="modal" data-target="#cohortMember${item.id}">
-      //      Learn More!
-      //     </button>
-
-      //     </center>
-      //     </div>
-      //     </div>
-      //     </div>
-      //   </div>`
-
       //modal info
       studentInfo += `
         <div class="modal fade" id="cohortMember${item.id}" tabindex="-1" role="dialog" aria-labelledby="cohortMember${item.id}Label" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -87,13 +77,13 @@ function cohortMembers(list) {
               </div>
               <div class="modal-body">
                 <div class="container-fluid">
-                <div class="row py-3">
+                <div class="row">
                   <div class="col-md-4"><img src="${item.funImg}" /></div>
                   <div class="col-md-8 pl-lg-4">
                     <h2 class="mt-4 mt-md-0 h1">${item.firstName} ${item.lastName}</h2>
+                    ${studentContact}
                     <p>${item.bio}</p>
                   `
-                    studentInfo += studentContact
                     studentInfo += `
                   </div>
                 </div><!--end .row -->

@@ -43,6 +43,10 @@ blockquote {
     color: #ff8400;
 }
 
+.carousel-inner {
+    background: #000;
+}
+
 .title h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
@@ -206,10 +210,21 @@ main {
 .contactIcons:hover {
     color: #000;
 }
-
 .modal-body .studentContact {
+    display: block;
     margin: 0px;
-    width: 210px;
+    margin-bottom: 20px;
+}
+.modal-body .studentContact .icon {
+    display: inline;
+    padding-right: 10px;
+}
+.modal-body .studentContact a {
+    text-decoration: none;
+}
+
+.modal-body p {
+    font-size: 20px;
 }
 
 .card-body {
@@ -293,7 +308,7 @@ button{
         width: 200px;
     }
     .student-name {
-        font-size: 24px;
+        font-size: 22px;
     }
     .studentContact {
         width: 150px;
@@ -302,7 +317,7 @@ button{
         font-size: 20px;
     }
     .modal-body .studentContact .contactIcons {
-        font-size: 30px;
+        font-size: 25px;
     }
     .container #thanks {
         font-size: 14px;
@@ -314,7 +329,7 @@ button{
 
     .jumbotron.jumbotron-fluid img{
         background: white;
-        margin-top:30px;
+        margin-top:40px;
        }
        .jumbotron.jumbotron-fluid.sm-width{
         width: 100%;
